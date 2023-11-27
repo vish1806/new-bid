@@ -1,0 +1,26 @@
+.form-control
+{
+    background-color:#998fd7;
+    color: rgb(0, 0, 0);
+}
+.form-floating
+{
+    width: 700px;
+    color: white;
+    border: solid;
+}
+.form-floating::placeholder
+{
+    color: white;
+}
+#sendbutton
+{
+    margin-left: 42%;
+    background-color: #d86a9a;
+}
+.box
+{
+    padding-left: 50%;
+    margin-bottom: 30%;
+    margin-top: 3%;
+}

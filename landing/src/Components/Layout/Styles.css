@@ -1,0 +1,162 @@
+.nav-link
+{
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-size: larger;
+}
+
+.nav-link:hover
+{
+  color: #ED287E;
+  font-size: larger;
+
+}
+.btn-outline-info
+{
+  border-radius: 30px;
+  border-color: black;
+  color: rgb(255, 255, 255);
+  background-color: #6456C5;
+}
+.btn-outline-info:hover
+{
+  background-color:#ED287E;
+  color: white;
+  border-color: black;
+  border-style: dashed;
+}
+.d-flex
+{
+  padding-right: 20px;
+}
+.form-control
+{
+  border-color:#6456C5;
+}
+.btn-outline-success
+{
+  background-color: #d86a9a;
+  color: white;
+}
+.btn-outline-success:hover
+{
+  background-color:#998fd7;
+}
+.dropdown-item
+{
+  color: black;
+}
+.dropdown-item:hover
+{
+  background-color: #ED287E;
+  color: white;
+}
+.bg-tertiary
+{
+  background-color: #998fd7;
+  margin-top: 7%;
+  padding-bottom: 7%;
+  height: 200px;
+}
+.text
+{
+  text-decoration: none;
+  color: white;
+  background-color: #998fd7;
+}
+.btn-outline-light
+{
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  color: white;
+  padding-left: 5px;
+}
+.btn-outline-light:hover
+{
+  color: black;
+}
+.nav-link
+{
+  color: black;
+}
+.container-fluid
+{
+  overflow: hidden;
+}
+.logsign
+{
+  justify-content: space-between;
+  list-style-type: none;  
+}
+.container
+{
+  display: flex;
+}
+.title
+{
+  width: auto;
+  margin-right: 20px;
+}
+.col 
+{
+  margin-right: 10px;
+  align-items: center;
+}
+.list-unstyled
+{
+  display: flex;
+  text-wrap: nowrap;
+  justify-content:space-around;
+  padding-top: 10px;
+  font-size: larger;
+}
+.rights
+{
+  padding-left: 37%;
+  padding-bottom: 1%;
+  font-weight: 400;
+  font-size: x-large;
+  color: white;
+  justify-items: center;
+  height: 10px;
+}
+.bg-tertiary
+{
+  height: 140px;
+}
+.navbar-shadow
+{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6 );
+}
+#sline
+{
+  color: white;
+}
+.cart
+{
+  list-style-type: none;
+}
+.nav-item
+{
+  list-style-type: none;
+}
+#nav-linkk
+{
+  color: white;
+  justify-content: center;
+}
+#nav-linkk:hover
+{
+  color: black;
+}
+.dropdown-menu
+{
+  margin-right: 20px;
+}
+#userauth
+{
+  height: 36.64px;
+  width: 37.6;
+  padding-right: 5px;
+  padding-top: 2px;
+}

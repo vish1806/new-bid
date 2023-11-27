@@ -1,0 +1,36 @@
+.card
+{
+    width: 250px;
+}
+.flexx
+{
+    display: flex;
+}
+.card-body
+{
+    background-color:#998fd7;
+    color: white;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.btn-primary
+{
+    background-color:#d86a9a ;
+}
+.linkedin
+{
+    color: #e6c2d2;
+}
+.mail
+{
+    color: #e6c2d2;
+}
+.github
+{
+    color: #e6c2d2;
+    justify-content: space-between;
+}
+.titlee
+{
+    padding-left: 1.5%;
+}

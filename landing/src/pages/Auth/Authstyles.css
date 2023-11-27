@@ -1,0 +1,13 @@
+.form-control::placeholder
+{
+    color: white;
+}
+.form-outline
+{
+    padding-left: 40%;
+    margin-left: 40%;
+}
+.form-control
+{
+    display: block;
+}

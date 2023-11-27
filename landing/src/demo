@@ -1,0 +1,279 @@
+<section className="h-100 gradient-form" styles="background-color: /eee;">
+  <div className="container py-5 h-100">
+      <div className="row d-flex justify-content-center align-items-center h-100">
+          <div className="col-xl-10">
+              <div className="card rounded-3 text-black">
+                  <div className="row g-0">
+                      <div className="col-lg-6">
+                          <div className="card-body p-md-5 mx-md-4">
+                              <div className="text-center">
+                                  <img src={logo} styles="width: 18px;" alt="logo"/>
+                                  <h4 className="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
+                              </div>
+                              <form>
+                              <p>Please login to your account</p>
+                              <div className="form-outline mb-4">
+                                  <input type="email" id="form2Example11" className="form-control" placeholder="Phone number or email address" />
+                                  <label className="form-label" forHtml="form2Example11">Username</label>
+                              </div>
+                              <div className="form-outline mb-4">
+                                  <input type="password" id="form2Example22" className="form-control" />
+                                  <label className="form-label" forHtml="form2Example22">Password</label>
+                              </div>
+                              <div className="text-center pt-1 mb-5 pb-1">
+                                  <button className="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Login</button>
+                                  <a className="text-muted" href="/">Forgot password?</a>
+                              </div>
+                              <div className="d-flex align-items-center justify-content-center pb-4">
+                                  <p className="mb-0 me-2">Don't have an account?</p>
+                                  <button type="button" className="btn btn-outline-danger">Create new</button>
+                              </div>
+                              </form>
+                          </div>
+                      </div>
+                      <div className="col-lg-6 d-flex align-items-center gradient-custom-2">
+                          <div className="text-white px-3 py-4 p-md-5 mx-md-4">
+                              <h4 className="mb-4">We are more than just a company</h4>
+                              <p className="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+appjs 
+
+import React, { Components } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import logo from './logoo.jpg';
+import './App.css';
+import Suggestions from './Components/Suggestions';
+import Contact from './Components/Contact';
+import About from './Components/About';
+import Login from './Components/Login';
+
+function App() {
+  return(
+      <>
+        <Router>
+          <nav className="navbar navbar-expand-lg bg-body-tertiary">
+              <div className="container-fluid">
+                <a className="navbar-brand" href="/">
+                <img src={logo} alt="React Image" width="80" height="60" />
+                </a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul className="navbar-nav">
+                    <li className="nav-item">
+                      <a className="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="/">Products</a>
+                    </li>
+                  </ul>
+                </div>
+                <form className="d-flex" role="search">
+                  <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                  <button className="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div> 
+            </nav> 
+            <Routes>
+              <Route path="/Suggestions" element={<SuggestionsPage />} />
+              <Route path="/ContactUs" element={<ContactPage />} />
+              <Route path="/AboutUs" element={<AboutPage />} />
+              <Route path="/" element={<HomePage />} />
+            </Routes>
+            <footer className="bg-tertiary text text-center text-lg-start">
+              <div className="container p-4">
+                <div className="row">
+                  <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 className="heading">BidHUB</h5>
+                    <p>
+                      At bidHUB, we've redefined the art of bidding. Experience the thrill of auctions like never before as you discover exclusive items and unbeatable deals. Join us today and let your bids lead you to exciting wins!"
+                    </p>
+                  </div>
+                  <div className="col-lg-3">
+                    <h5 className="links">Links</h5>
+                    <ul className="list-unstyled">
+                      <li>
+                        <Link to="/" className="text">Home</Link>
+                      </li>
+                      <li>
+                        <Link to="/AboutUs" className="text">About Us</Link>
+                      </li>
+                      <li>
+                        <Link to="/ContactUs" className="text">Contact Us</Link>
+                      </li>
+                      <li>
+                        <Link to="/Suggestions" className="text">Suggestions</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </footer>
+        </Router>
+      </>
+    
+  );
+}
+function HomePage() {
+  return <h1>Home page</h1>;
+}
+function SuggestionsPage() {
+  return <Suggestions />;
+}
+function AboutPage() {
+  return <About />;
+}
+function ContactPage() {
+  return <Contact />;
+}
+
+export default App;
+
+
+
+app.js 
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import logo from './logoo.jpg';
+import './App.css';
+import Suggestions from './Components/Suggestions';
+import Contact from './Components/Contact';
+import About from './Components/About';
+import Login from './Components/Login';
+
+function App() {
+  return (
+    <>
+      <Router>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
+          <a className="navbar-brand" href="/">
+            <img src={logo} alt="React Image" width="80" height="60" />
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="/navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="navbar navbar-light bg-light" id="navbarNavDropdown">
+            <ul className="navbar-nav p-0">
+              <li className="nav-item p-0">
+                <a className="nav-link" aria-current="page" href="/">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item p-0">
+                <a className="nav-link" href="/">
+                  Products
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form className="d-flex" role="search">
+            <input
+              class="form-control mx-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button className="btn btn-outline-success" type="submit">
+              Enter
+            </button>
+          </form>
+          <div className="logsign">
+            <button type="button" class="btn btn-outline-light mx-2">
+              Login
+            </button>
+            <button type="button" class="btn btn-outline-light">
+              Sign Up
+            </button>
+          </div>
+        </nav>
+        <Routes>
+          <Route path="/Suggestions" element={<SuggestionsPage />} />
+          <Route path="/ContactUs" element={<ContactPage />} />
+          <Route path="/AboutUs" element={<AboutPage />} />
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+        <footer className="bg-tertiary text text-center text-lg-start">
+          <div className="container p-4">
+            <div className="col">
+              <h5 className="links">Links</h5>
+              <ul className="list-unstyled">
+                <li>
+                  <Link to="/" className="text">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/AboutUs" className="text">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/ContactUs" className="text">
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Suggestions" className="text">
+                    Suggestions
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </Router>
+    </>
+  );
+}
+function HomePage() {
+  return <h1>Home page</h1>;
+}
+function SuggestionsPage() {
+  return <Suggestions />;
+}
+function AboutPage() {
+  return <About />;
+}
+function ContactPage() {
+  return <Contact />;
+}
+
+export default App;
+
+
+
+
+import React from 'react';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { BrowserRouter} from "react-router-dom";
+import ReactDOM from "react-dom";
+
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
+reportWebVitals();
