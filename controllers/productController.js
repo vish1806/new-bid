@@ -242,7 +242,10 @@ export const productListController = async (req, res) => {
   }
 };
 
+<<<<<<< HEAD
 // search product
+=======
+>>>>>>> 3cba201ee96a8cfb5bf420b4f269adfb0a6ba8ec
 export const searchProductController = async (req, res) => {
   try {
     const { keyword } = req.params;
@@ -263,6 +266,7 @@ export const searchProductController = async (req, res) => {
       error,
     });
   }
+<<<<<<< HEAD
 };
 
 // similar products
@@ -309,4 +313,6 @@ export const productCategoryController = async (req, res) => {
       message: "Error While Getting products",
     });
   }
+=======
+>>>>>>> 3cba201ee96a8cfb5bf420b4f269adfb0a6ba8ec
 };

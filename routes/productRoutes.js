@@ -12,6 +12,7 @@ import {
   realtedProductController,
   searchProductController,
   updateProductController,
+  searchProductController,
 } from "../controllers/productController.js";
 import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
 import formidable from "express-formidable";
@@ -59,10 +60,13 @@ router.get("/product-list/:page", productListController);
 //search product
 router.get("/search/:keyword", searchProductController);
 
+<<<<<<< HEAD
 //similar product
 router.get("/related-product/:pid/:cid", realtedProductController);
 
 //category wise product
 router.get("/product-category/:slug", productCategoryController);
 
+=======
+>>>>>>> 3cba201ee96a8cfb5bf420b4f269adfb0a6ba8ec
 export default router;
